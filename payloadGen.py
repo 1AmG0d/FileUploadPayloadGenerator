@@ -69,7 +69,6 @@ def createExtBypassPayload(dir, file, payload, bChar):
             printMessage("CRITICAL", "Exception Occurred:\n" + e)
 
 def main():
-    print("By: " + __author__)
     printMessage("INFO", "Program Starting")
 
     for file in args.file:
@@ -143,6 +142,9 @@ if __name__ == '__main__':
 
     args = parser.parse_args()
     config = configparser.ConfigParser()
+
+    print("Payload Generator: XSS in filename & Extension bypass")
+    print("By: " + __author__)
 
     printMessage("INFO", "Loading Config File")
     config.read(__config__)
