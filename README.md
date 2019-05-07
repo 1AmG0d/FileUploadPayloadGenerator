@@ -24,6 +24,8 @@ optional arguments:
 
 ```
 User$ python payloadGen.py -f x.svg -a
+
+Payload Generator: XSS in filename & Extension bypass
 By: IΛMGӨÐ
 INFO: Loading Config File
 INFO: Program Starting
