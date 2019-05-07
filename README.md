@@ -1,7 +1,7 @@
 # FileUploadPayloadGenerator
 Used To Generate A Number Of Payloads Given A file
 
-
+```
 User$ python payloadGen.py --help
 
 usage: payloadGen.py -f FILE [FILE ...] [-a] [-e] [-x] [-h] [-v]
@@ -20,3 +20,4 @@ optional arguments:
   -x, --xss             create xss file payloads
   -h, --help            show this help message and exit
   -v, --verbose         display information verbosely
+```
